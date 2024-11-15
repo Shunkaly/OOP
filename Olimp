@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+int summ;
+
+class Client{
+public:
+    int ID;
+    int cash;
+    Client(){}
+    Client(int id,int Cash){
+    this->ID = id;
+    this->cash = Cash;
+    }
+    ~Client(){
+
+    }
+    void Perevod(int id1, int id2, int summ, Client nextElem){
+        if(this->cash<summ) return;
+        this->cash = this->cash-summ;
+        nextElem =
+        
+    }
+
+};
+
+int main()
+{
+const int size = 100000;
+Client arr[size];
+//int arr1[size];
+int M,N,id,Cash,id1,id2;
+cin>>M>>N;
+for(int i;i<N;i++){
+cin>>id;
+cin>>Cash;
+Client client(id,Cash);
+arr[i]=client;
+//arr[i]=id;//rr1[i]=Cash;
+}
+for(int i;i<N;i++){
+    for(int j;j<M;j++){
+    cin>>id1>>id2>>summ;
+    break;
+    }
+    arr[i].Perevod(id1,id2,summ,arr[i+1]);
+}
+}
